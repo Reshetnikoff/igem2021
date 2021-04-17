@@ -134,13 +134,64 @@ section {
 
 .title1 {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.2rem;
   @include Raleway;
   margin-top: 0;
 }
 
+.title2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  @include Raleway;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.title3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  @include Raleway;
+}
+
 .team, .sponsors {
   background-color: $grey;
+}
+
+.project__actual-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+
+    .project__item {
+      width: 48%;
+      font-size: 1.2rem;
+      display: flex;
+      flex-flow: row nowrap;
+      margin-bottom: 20px;
+
+      &:nth-child(odd) {
+        margin-right: 2%;
+      }
+
+      &:nth-child(even) {
+        margin-left: 2%;
+      }
+
+      @include phone {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      } 
+    }
+
+    svg {
+      width: 80px;
+      margin-right: 4%;
+      flex-shrink: 0;
+
+      &:hover {
+        fill: $yellow;
+      }
+    }
 }
 
 .team__slider {
@@ -200,6 +251,39 @@ section {
     @include Raleway;
     font-weight: 600;
     text-align: center;
+  }
+}
+
+.social {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .title2 {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    .social__item {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 60px;
+
+      &:last-child {
+        margin-right: auto;
+      }
+
+      img {
+        width: 100%;
+        transition: 500ms;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: 500ms;
+        }
+      }
+    }
   }
 }
 
