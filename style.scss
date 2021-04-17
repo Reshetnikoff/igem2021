@@ -1,0 +1,171 @@
+@mixin phone {
+  @media (max-width: 480px) { @content; }
+}
+@mixin tablet-portrait {
+  @media (max-width: 768px) { @content; }
+}
+@mixin tablet-landscape {
+  @media (max-width: 1024px) { @content; }
+}
+@mixin desktop {
+  @media (max-width: 1199px) { @content; }
+}
+@mixin big-desktop {
+  @media (min-width: 1200px) { @content; }
+}
+
+$black: #000;
+$yellow: #F9D332;
+$grey: #C4C4C4;
+
+@mixin OpenSans {font-family: 'Open Sans', sans-serif;}
+@mixin Raleway {font-family: 'Raleway', sans-serif;}
+@mixin yellow-line {
+  display: block;
+  height: 6px;
+  background-color: $yellow;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  @include OpenSans;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background-color: $black;
+  padding-top: 30px;
+  @include Raleway;
+
+  .header__logo {
+    width: 150px;
+    margin-bottom: 20px;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .header__menu-line {
+    background-color: $grey;
+    position: relative;
+  }
+
+  .header__menu-line::after {
+    content: '';
+    @include yellow-line;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+
+    .header__nav-item {
+      width: 25%;
+      color: $black;
+      text-decoration: none;
+      text-align: center;
+      padding: 12px 10px;
+      font-weight: 600;
+      position: static;
+
+      &:hover {
+        background-color: $yellow;
+      }
+
+      &:first-child:hover::before {
+        content: '';
+        position: absolute;
+        background-color: $yellow;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        z-index: 1;
+      }
+
+      &:last-child:hover::after {
+        content: '';
+        position: absolute;
+        background-color: $yellow;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 20%;
+        z-index: 1;
+      }
+
+      .header__nav-text {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    @include tablet-portrait {
+      flex-direction: column;
+
+      .header__nav-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title1 {
+  font-weight: 400;
+  font-size: 2rem;
+  @include Raleway;
+  margin-top: 0;
+}
+
+.team, .sponsors {
+  background-color: $grey;
+}
+
+.team__items-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  width: 25%;
+
+  .team__portrait {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .team__name {
+    @include Raleway;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $black;
+}

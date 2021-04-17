@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="style.css">
+  <title>Moscow iGEM 2021</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="./img/logo.svg" alt="Moscow iGEM 2021">
+      </div>
+    </div>
+    <div class="header__menu-line">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__nav-item" href="#about">
+            <span class="header__nav-text">Что такое iGEM?</span>
+          </a>
+          <a class="header__nav-item" href="#team">
+            <span class="header__nav-text">Команда</span>
+          </a>
+          <a class="header__nav-item" href="#support">
+            <span class="header__nav-text">Как нас поддержать?</span>
+          </a>
+          <a class="header__nav-item" href="#sponsors">
+            <span  class="header__nav-text">Спонсоры</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="project wow animate__fadeIn" data-wow-duration="2s" id="project">
+      <div class="container">
+        <h1 class="title1">
+          Наш проект
+        </h1>
+      </div>
+    </section>
+    <section class="about wow animate__fadeIn" data-wow-duration="2s" id="about">
+      <div class="container">
+        <h1 class="title1">
+          Что такое iGEM?
+        </h1>
+      </div>
+    </section>
+    <section class="team wow animate__fadeIn" data-wow-duration="2s" id="team">
+      <div class="container">
+        <h1 class="title1">
+          Команда
+        </h1>
+        <div class="team__items-wrapper">
+          <div class="team__item">
+            <div class="team__portrait"></div>
+            <h3 class="team__name">Имя Фамилия</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="support wow animate__fadeIn" data-wow-duration="2s" id="support">
+      <div class="container">
+        <h1 class="title1">
+          Как нас поддержать?
+        </h1>
+      </div>
+    </section>
+    <section class="sponsors wow animate__fadeIn" data-wow-duration="2s" id="sponsors">
+      <div class="container">
+        <h1 class="title1">
+          Спонсоры
+        </h1>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container"></div>
+  </footer>
+</body>
+<script src="index.js" defer></script>
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+</html>
