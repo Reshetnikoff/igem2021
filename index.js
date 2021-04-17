@@ -180,7 +180,7 @@ function setSlider (team) {
 
     end = start + elemNumber;
 
-    if (end == team.length) {
+    if (end >= team.length) {
       right.classList.add('hidden');
     } else {
       right.classList.remove('hidden');
@@ -193,12 +193,12 @@ function setSlider (team) {
   
 
   left.addEventListener('click', () => {
-    start -= 1;
+    start -= elemNumber;
     setPosition(elemNumber, start, team);
   })
 
   right.addEventListener('click', () => {
-    start += 1;
+    start += elemNumber;
     setPosition(elemNumber, start, team);
   })
 
