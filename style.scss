@@ -210,10 +210,18 @@ section {
 
   &#slider-left {
     left: -60px;
+
+    @include phone {
+      left: -15px;
+    }
   }
 
   &#slider-right {
     right: -60px;
+
+    @include phone {
+      right: -15px;
+    }
   }
 
   img {
@@ -226,6 +234,10 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+
+  @include phone {
+    justify-content: center;
+  }
 }
 
 .team__item {
@@ -233,6 +245,14 @@ section {
 
   @include tablet-landscape {
     width: 33%;
+  }
+
+  @include tablet-portrait {
+    width: 50%;
+  }
+
+  @include phone {
+    width: 90%;
   }
 
   .team__portrait {
@@ -283,6 +303,10 @@ section {
           transition: 500ms;
         }
       }
+    }
+
+    @include tablet-portrait {
+      flex-wrap: wrap;
     }
   }
 }

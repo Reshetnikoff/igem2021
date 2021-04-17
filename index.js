@@ -69,7 +69,7 @@ const team = [
     img: './img/team/zagirova_diana.jpg',
     info: '',
   },
-   {
+  {
     name: 'Екатерина Колодяжная',
     img: './img/team/kolodyazhnaya_ekaterina.jpg',
     info: '',
@@ -79,12 +79,12 @@ const team = [
     img: './img/team/chebanenko_viktorya.jpg',
     info: '',
   },
-   {
+  {
     name: 'Екатерина Ганжула',
     img: './img/team/ganzhula_ekaterina.jpg',
     info: '',
   },
-   {
+  {
     name: 'Дарья Лунегова',
     img: './img/team/lunegova_darya.jpg',
     info: '',
@@ -164,7 +164,9 @@ function setSlider (team) {
     elemNumber = 4;
   } else if (slider.offsetWidth >= 768) {
     elemNumber = 3;
-  }
+  } else {
+    elemNumber = 2;
+  } 
 
   const setPosition = (elemNumber, start, team) => {
     if (start == 0) {
