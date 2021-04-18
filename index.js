@@ -109,7 +109,7 @@ const team = [
     info: 'Связи с общественностью',
   },
 
- {
+  {
     name: 'Александр Минаков',
     img: './img/team/minakov_alexander.jpg',
     info: 'Сухая лаборатория',
@@ -155,7 +155,7 @@ const team = [
     img: './img/team/kravchenko_pavel.jpg',
     info: 'Сухая лаборатория',
   },
- 
+
   {
     name: 'Никита Моторин',
     img: './img/team/motorin_nikita.jpg',
