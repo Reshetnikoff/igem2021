@@ -1,27 +1,29 @@
 const team = [
   {
+    name: 'Дарья Малинина',
+    img: './img/team/malinina_darya.jpg',
+    info: 'Куратор научной части<br>Организатор',
+  },
+
+  {
     name: 'Кирилл Решетников',
     img: './img/team/reshetnikov_kirill.jpg',
-    info: 'Team-leader',
+    info: 'Куратор научной части<br>Организатор',
   },
+
+  {
+    name: 'Алёна Старикова',
+    img: './img/team/starikova_alyona.jpg',
+    info: 'Куратор научной части<br>Организатор',
+  },
+
 
   {
     name: 'Вера Сысоева',
     img: './img/team/sysoeva_vera.jpg',
-    info: 'Team-leader',
+    info: 'Куратор научной части<br>Организатор',
   },
 
-  {
-    name: 'Дарья Малинина',
-    img: './img/team/malinina_darya.jpg',
-    info: 'Куратор научной части',
-  },
-
-  {
-    name: 'Алена Старикова',
-    img: './img/team/starikova_alyona.jpg',
-    info: 'Куратор научной части',
-  },
   {
     name: 'Валерия Спиридонова',
     img: './img/team/spiridonova_valeria.jpg',
@@ -31,7 +33,7 @@ const team = [
   {
     name: 'Полина Журлова',
     img: './img/team/zhurlova_polina.jpg',
-    info: 'Ответственная за SMM',
+    info: 'Ответственная за CMM',
   },
 
   {
@@ -50,13 +52,6 @@ const team = [
     name: 'Анастасия Кислова',
     img: './img/team/kislova_anastasia.jpg',
     info: 'Ответственная за мероприятия',
-  },
-
-
-  {
-    name: 'Вячеслав Паско',
-    img: './img/team/pasko_vyacheslav.jpg',
-    info: 'Сухая лаборатория',
   },
 
   {
@@ -85,15 +80,29 @@ const team = [
     info: 'Связи с общественностью',
   },
 
+
   {
-    name: 'Юлия Васильева',
-    img: './img/team/vasilyeva_julia.jpg',
-    info: 'Связи с общественностью',
+    name: 'Вячеслав Паско',
+    img: './img/team/pasko_vyacheslav.jpg',
+    info: 'Сухая лаборатория',
+  },
+
+
+  {
+    name: 'Мария Медведева',
+    img: './img/team/medvedeva_maria.jpg',
+    info: 'Мокрая лаборатория',
   },
 
   {
     name: 'Константин Каменский',
     img: './img/team/kamenskii_konstantin.jpg',
+    info: 'Связи с общественностью',
+  },
+
+  {
+    name: 'Юлия Васильева',
+    img: './img/team/vasilyeva_julia.jpg',
     info: 'Связи с общественностью',
   },
 
@@ -106,7 +115,7 @@ const team = [
   {
     name: 'Екатерина Ганжула',
     img: './img/team/ganzhula_ekaterina.jpg',
-    info: 'Связи с общественностью',
+    info: 'Мокрая лаборатория',
   },
 
   {
@@ -118,18 +127,38 @@ const team = [
   {
     name: 'Дарья Лунегова',
     img: './img/team/lunegova_darya.jpg',
-    info: '',
+    info: 'Мокрая лаборатория',
   },
   {
     name: 'Екатерина Кравчук',
     img: './img/team/kravchuk_ekaterina.jpg',
-    info: 'Сухая лаборатория',
+    info: 'Мокрая лаборатория',
   },
+
+  {
+    name: 'Вячеслав Фёдоров',
+    img: './img/team/fyodorov_slava.jpg',
+    info: 'Мокрая лаборатория',
+  },
+
   {
     name: 'Анастасия Щербакова',
     img: './img/team/sherbakova_anastasia.jpg',
     info: 'Связи с общественностью',
   },
+
+  {
+    name: 'Дарья Маркова',
+    img: './img/team/markova_darya.jpg',
+    info: 'Соцсети и дизайн',
+  },
+
+  {
+    name: 'Алёна Яхненко',
+    img: './img/team/yahnenko_alyona.jpg',
+    info: 'Сухая лаборатория',
+  },
+
   {
     name: 'Ксения Кусакина',
     img: './img/team/kusacina_ksenia.jpg',
@@ -157,6 +186,12 @@ const team = [
   },
 
   {
+    name: 'Ольга Чечёкина',
+    img: './img/team/chechyokina_olga.jpg',
+    info: 'Мокрая лаборатория',
+  },
+
+  {
     name: 'Никита Моторин',
     img: './img/team/motorin_nikita.jpg',
     info: 'Сухая лаборатория',
@@ -169,16 +204,17 @@ const team = [
   },
 
   {
-    name: 'Никита Моторин',
-    img: './img/team/motorin_nikita.jpg',
-    info: 'Сухая лаборатория',
-  },
-
-  {
     name: 'Артём Мурзин',
     img: './img/team/murzin_artyom.jpg',
     info: 'Сухая лаборатория',
   },
+
+  {
+    name: 'Иван Кутелёв',
+    img: './img/team/kutelev_ivan.jpg',
+    info: 'Мокрая лаборатория',
+  },
+
 ];
 
 function renderTeam (list) {
