@@ -57,7 +57,7 @@ const team = [
   {
     name: 'Валентина Костенко',
     img: './img/team/kostenko_valentina.jpg',
-    info: 'Связи с общественностью',
+    info: 'Мокрая лаборатория',
   },
 
 
@@ -97,7 +97,7 @@ const team = [
   {
     name: 'Константин Каменский',
     img: './img/team/kamenskii_konstantin.jpg',
-    info: 'Связи с общественностью',
+    info: 'Мокрая лаборатория',
   },
 
   {

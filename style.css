@@ -83,6 +83,12 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .header .header__nav .header__nav-item:first-child:hover::before {
+    display: none;
+  }
+}
+
 .header .header__nav .header__nav-item:last-child:hover::after {
   content: '';
   position: absolute;
@@ -92,6 +98,12 @@ body {
   right: 0;
   width: 20%;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .header .header__nav .header__nav-item:last-child:hover::after {
+    display: none;
+  }
 }
 
 .header .header__nav .header__nav-item .header__nav-text {
@@ -292,6 +304,8 @@ section {
 @media (max-width: 480px) {
   .team__item {
     width: 90%;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 }
 
