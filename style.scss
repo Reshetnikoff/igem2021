@@ -17,6 +17,7 @@
 $black: #000;
 $yellow: #F9D332;
 $grey: #C4C4C4;
+$dark-grey: #999999;
 
 @mixin OpenSans {font-family: 'Open Sans', sans-serif;}
 @mixin Raleway {font-family: 'Raleway', sans-serif;}
@@ -154,7 +155,7 @@ section {
 }
 
 .team, .sponsors {
-  background-color: $grey;
+  background-color: $dark-grey;
 }
 
 .project__actual-wrapper {
@@ -192,6 +193,19 @@ section {
         fill: $yellow;
       }
     }
+}
+
+.highlight {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+
+  @include tablet-portrait {
+    width: 100%;
+  }
 }
 
 .team__slider {
