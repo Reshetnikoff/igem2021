@@ -301,10 +301,13 @@ section {
   justify-content: center;
   align-items: center;
 
+  .sponsors__item {
+    margin: 0 3% 6%;
+  }
+
   .sponsors__logo {
     width: 200px;
     height: 200px;
-    margin: 0 3% 6%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

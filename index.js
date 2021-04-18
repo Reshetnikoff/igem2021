@@ -246,7 +246,7 @@ function renderSponsors (list) {
   const itemsWrapper = document.querySelector('.sponsors__items-wrapper');
   let html = '';
   list.forEach(sponsor => {
-    html += `<div class="sponsors__item">
+    html += `<div class="sponsors__item" title="${sponsor.name}">
         <a href="${sponsor.link}"> <div class="sponsors__logo" style="background-image: url(${sponsor.img});"></div></a>
       </div>`;
   });

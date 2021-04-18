@@ -336,10 +336,13 @@ section {
           align-items: center;
 }
 
+.sponsors__items-wrapper .sponsors__item {
+  margin: 0 3% 6%;
+}
+
 .sponsors__items-wrapper .sponsors__logo {
   width: 200px;
   height: 200px;
-  margin: 0 3% 6%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
