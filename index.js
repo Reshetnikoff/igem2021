@@ -214,7 +214,19 @@ const team = [
     img: './img/team/kutelev_ivan.jpg',
     info: 'Мокрая лаборатория',
   },
+];
 
+const sponsors = [
+  {
+    name: 'Биологический факультет МГУ',
+    img: './img/sponsors/biofac.jpg',
+    link: 'http://www.bio.msu.ru/',
+  },
+  {
+    name: 'МГУ',
+    img: './img/sponsors/msu.png',
+    link: 'https://www.msu.ru',
+  },
 ];
 
 function renderTeam (list) {
@@ -225,6 +237,17 @@ function renderTeam (list) {
         <div class="team__portrait" style="background-image: url(${member.img});"></div>
         <h3 class="team__name">${member.name}</h3>
         <p class="team__info">${member.info}</p>
+      </div>`;
+  });
+  itemsWrapper.innerHTML = html;
+}
+
+function renderSponsors (list) {
+  const itemsWrapper = document.querySelector('.sponsors__items-wrapper');
+  let html = '';
+  list.forEach(sponsor => {
+    html += `<div class="sponsors__item">
+        <a href="${sponsor.link}"> <div class="sponsors__logo" style="background-image: url(${sponsor.img});"></div></a>
       </div>`;
   });
   itemsWrapper.innerHTML = html;
@@ -280,6 +303,7 @@ function setSlider (team) {
 
 function init() {
   setSlider(team);
+  renderSponsors(sponsors);
 }
 
 document.addEventListener('DOMContentLoaded', init);

@@ -137,8 +137,8 @@ section {
   font-family: 'Raleway', sans-serif;
 }
 
-.team, .sponsors {
-  background-color: #2d2d2d;
+.team {
+  background-color: #C4C4C4;
 }
 
 .project__actual-wrapper {
@@ -318,6 +318,40 @@ section {
   font-weight: 400;
   text-align: center;
   margin: 0;
+}
+
+.sponsors__items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsors__items-wrapper .sponsors__logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 3% 6%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sponsors::before {
+  content: '';
+  display: block;
+  height: 6px;
+  background-color: #F9D332;
+  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
 .social .container {
