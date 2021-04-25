@@ -27,6 +27,8 @@ $dark-grey: #2d2d2d;
   background-color: $yellow;
 }
 
+$yellow-gradient-bg: linear-gradient(270deg, #FADA53 0%, #FFFAE3 100%);
+
 * {
   box-sizing: border-box;
 }
@@ -41,6 +43,10 @@ body {
   @include OpenSans;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 20px;
@@ -50,9 +56,9 @@ body {
 }
 
 .header {
-  background-color: $black;
+  background-image: $yellow-gradient-bg;
   padding-top: 30px;
-  @include Raleway;
+  // @include Raleway;
 
   & > .container {
     display: flex;
@@ -143,6 +149,9 @@ body {
 }
 
 .miPression {
+  background-color: white;
+  padding: 16px 30px;
+  border-radius: 50px;
   margin-left: auto;
   img {
     width: 100%;
@@ -161,14 +170,14 @@ section {
 .title1 {
   font-weight: 400;
   font-size: 2.2rem;
-  @include Raleway;
+  // @include Raleway;
   margin-top: 0;
 }
 
 .title2 {
   font-weight: 400;
   font-size: 1.8rem;
-  @include Raleway;
+  // @include Raleway;
   margin-top: 0;
   margin-bottom: 7px;
 }
@@ -176,11 +185,11 @@ section {
 .title3 {
   font-weight: 500;
   font-size: 1.5rem;
-  @include Raleway;
+  // @include Raleway;
 }
 
 .team {
-  background-color: $grey;
+  background-image: $yellow-gradient-bg;
 }
 
 .project__actual-wrapper {
@@ -315,7 +324,7 @@ section {
   }
 
   .team__name {
-    @include Raleway;
+    // @include Raleway;
     font-weight: 600;
     text-align: center;
     margin-bottom: 10px;
@@ -406,5 +415,5 @@ section {
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: $black;
+  background-image: $yellow-gradient-bg;
 }
