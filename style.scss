@@ -56,22 +56,44 @@ p {
 }
 
 .header {
-  background-image: $yellow-gradient-bg;
-  padding-top: 30px;
-  // @include Raleway;
+
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 93%, #FFFFFF 93%), $yellow-gradient-bg;
+
+  @media (min-width:1300px) {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 90%, #FFFFFF 90%), $yellow-gradient-bg;
+  }
+
+  @media (min-width:1450px) {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 80%, #FFFFFF 80%), $yellow-gradient-bg;
+  }
 
   & > .container {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    padding-top: 30px;
+    background-image: url('./img/header-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include phone {
+      background-position: left;
+    }
   }
 
   .header__logo {
-    width: 150px;
-    margin-bottom: 20px;
+    width: 225px;
+    margin-top: -30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('./img/whitelogobg.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 
-    svg {
-      width: 100%;
+    img {
+      width: 67%;
     }
   }
 
