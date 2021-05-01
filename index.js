@@ -43,8 +43,20 @@ const team = [
   },
   
   {
+     name: 'Артём Мурзин',
+     img: './img/team/murzin_artyom.jpg',
+     info: 'Сухая лаборатория',
+  },
+  
+  {
     name: 'Валентина Костенко',
     img: './img/team/kostenko_valentina.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Иван Кутелёв',
+    img: './img/team/kutelev_ivan.jpg',
     info: 'Мокрая лаборатория',
   },
   
@@ -185,12 +197,7 @@ const team = [
     img: './img/team/markova_darya.jpg',
     info: 'Соцсети и дизайн',
   },
-
-  {
-    name: 'Иван Кутелёв',
-    img: './img/team/kutelev_ivan.jpg',
-    info: 'Мокрая лаборатория',
-  },
+  
 ];
 
 const sponsors = [
