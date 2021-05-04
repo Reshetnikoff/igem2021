@@ -25,69 +25,155 @@ const team = [
   },
 
   {
+    name: 'Марина Фроленкова',
+    img: './img/team/frolenkova_marina.jpg',
+    info: 'Ответственная за фандрайзинг',
+  },
+  
+  {
+    name: 'Анастасия Кислова',
+    img: './img/team/kislova_anastasia.jpg',
+    info: 'Ответственная за мероприятия',
+  },
+  
+  {
+    name: 'Полина Журлова',
+    img: './img/team/zhurlova_polina.jpg',
+    info: 'Ответственная за CMM',
+  },
+  
+  {
+     name: 'Артём Мурзин',
+     img: './img/team/murzin_artyom.jpg',
+     info: 'Сухая лаборатория',
+  },
+  
+  {
+    name: 'Валентина Костенко',
+    img: './img/team/kostenko_valentina.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Иван Кутелёв',
+    img: './img/team/kutelev_ivan.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Александр Минаков',
+    img: './img/team/minakov_alexander.jpg',
+    info: 'Сухая лаборатория',
+  },
+  
+  {
+    name: 'Юлия Васильева',
+    img: './img/team/vasilyeva_julia.jpg',
+    info: 'Связи с общественностью',
+  },
+  
+  {
     name: 'Валерия Спиридонова',
     img: './img/team/spiridonova_valeria.jpg',
     info: 'Ответственная за коллаборации',
   },
 
   {
-    name: 'Полина Журлова',
-    img: './img/team/zhurlova_polina.jpg',
-    info: 'Ответственная за CMM',
+    name: 'Анна Капитонова',
+    img: './img/team/kapitonova_anna.jpg',
+    info: 'Связи с общественностью',
   },
-
-  {
-    name: 'Виктория Чебаненко',
-    img: './img/team/chebanenko_viktorya.jpg',
-    info: 'Ответственная за PR',
-  },
-
-  {
-    name: 'Марина Фроленкова',
-    img: './img/team/frolenkova_marina.jpg',
-    info: 'Ответственная за фандрайзинг',
-  },
-
-  {
-    name: 'Анастасия Кислова',
-    img: './img/team/kislova_anastasia.jpg',
-    info: 'Ответственная за мероприятия',
-  },
-
-  {
-    name: 'Валентина Костенко',
-    img: './img/team/kostenko_valentina.jpg',
-    info: 'Мокрая лаборатория',
-  },
-
-
+  
   {
     name: 'Надежда Азбукина',
     img: './img/team/azbukina_nadezhda.jpg',
     info: 'Сухая лаборатория',
   },
-
-  {
-    name: 'Екатерина Колодяжная',
-    img: './img/team/kolodyazhnaya_ekaterina.jpg',
-    info: 'Мокрая лаборатория',
-  },
-
-
-  {
-    name: 'Анна Капитонова',
-    img: './img/team/kapitonova_anna.jpg',
-    info: 'Связи с общественностью',
-  },
-
-
+  
   {
     name: 'Вячеслав Паско',
     img: './img/team/pasko_vyacheslav.jpg',
     info: 'Сухая лаборатория',
   },
+  
+  {
+    name: 'Диана Загирова',
+    img: './img/team/zagirova_diana.jpg',
+    info: 'Связи с общественностью',
+  },
+  
+  {
+    name: 'Екатерина Колодяжная',
+    img: './img/team/kolodyazhnaya_ekaterina.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Виктория Чебаненко',
+    img: './img/team/chebanenko_viktorya.jpg',
+    info: 'Ответственная за PR',
+  },
+  
+  {
+    name: 'Екатерина Ганжула',
+    img: './img/team/ganzhula_ekaterina.jpg',
+    info: 'Мокрая лаборатория',
+  },
 
-
+  {
+    name: 'Дарья Лунегова',
+    img: './img/team/lunegova_darya.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Екатерина Кравчук',
+    img: './img/team/kravchuk_ekaterina.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Ксения Кусакина',
+    img: './img/team/kusacina_ksenia.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Дарья Баранова',
+    img: './img/team/baranova_darya.jpg',
+    info: 'Связи с общественностью',
+  },
+  
+  {
+    name: 'Наида Мамаева',
+    img: './img/team/mamaeva_naida.jpg',
+    info: 'Мокрая лаборатория',
+  },
+  
+  {
+    name: 'Георгий Чистов',
+    img: './img/team/chistov_george.jpg',
+    info: 'Сухая лаборатория',
+  },
+  
+  {
+    name: 'Павел Кравченко',
+    img: './img/team/kravchenko_pavel.jpg',
+    info: 'Сухая лаборатория',
+  },
+  
+  {
+    name: 'Никита Моторин',
+    img: './img/team/motorin_nikita.jpg',
+    info: 'Сухая лаборатория',
+  },
+  
+  {
+    name: 'Маргарита Егиян',
+    img: './img/team/egian_margarita.jpg',
+    info: 'Связи с общественностью',
+  },
+  
   {
     name: 'Мария Медведева',
     img: './img/team/medvedeva_maria.jpg',
@@ -97,47 +183,6 @@ const team = [
   {
     name: 'Константин Каменский',
     img: './img/team/kamenskii_konstantin.jpg',
-    info: 'Мокрая лаборатория',
-  },
-
-  {
-    name: 'Юлия Васильева',
-    img: './img/team/vasilyeva_julia.jpg',
-    info: 'Связи с общественностью',
-  },
-
-  {
-    name: 'Диана Загирова',
-    img: './img/team/zagirova_diana.jpg',
-    info: 'Связи с общественностью',
-  },
-
-  {
-    name: 'Екатерина Ганжула',
-    img: './img/team/ganzhula_ekaterina.jpg',
-    info: 'Мокрая лаборатория',
-  },
-
-  {
-    name: 'Александр Минаков',
-    img: './img/team/minakov_alexander.jpg',
-    info: 'Сухая лаборатория',
-  },
-
-  {
-    name: 'Дарья Лунегова',
-    img: './img/team/lunegova_darya.jpg',
-    info: 'Мокрая лаборатория',
-  },
-  {
-    name: 'Екатерина Кравчук',
-    img: './img/team/kravchuk_ekaterina.jpg',
-    info: 'Мокрая лаборатория',
-  },
-
-  {
-    name: 'Вячеслав Фёдоров',
-    img: './img/team/fyodorov_slava.jpg',
     info: 'Мокрая лаборатория',
   },
 
@@ -152,68 +197,7 @@ const team = [
     img: './img/team/markova_darya.jpg',
     info: 'Соцсети и дизайн',
   },
-
-  {
-    name: 'Алёна Яхненко',
-    img: './img/team/yahnenko_alyona.jpg',
-    info: 'Сухая лаборатория',
-  },
-
-  {
-    name: 'Ксения Кусакина',
-    img: './img/team/kusacina_ksenia.jpg',
-    info: 'Мокрая лаборатория',
-  },
-  {
-    name: 'Дарья Баранова',
-    img: './img/team/baranova_darya.jpg',
-    info: 'Связи с общественностью',
-  },
-  {
-    name: 'Наида Мамаева',
-    img: './img/team/mamaeva_naida.jpg',
-    info: 'Мокрая лаборатория',
-  },
-  {
-    name: 'Георгий Чистов',
-    img: './img/team/chistov_george.jpg',
-    info: 'Сухая лаборатория',
-  },
-  {
-    name: 'Павел Кравченко',
-    img: './img/team/kravchenko_pavel.jpg',
-    info: 'Сухая лаборатория',
-  },
-
-  {
-    name: 'Ольга Чечёкина',
-    img: './img/team/chechyokina_olga.jpg',
-    info: 'Мокрая лаборатория',
-  },
-
-  {
-    name: 'Никита Моторин',
-    img: './img/team/motorin_nikita.jpg',
-    info: 'Сухая лаборатория',
-  },
-
-  {
-    name: 'Маргарита Егиян',
-    img: './img/team/egian_margarita.jpg',
-    info: 'Связи с общественностью',
-  },
-
-  {
-    name: 'Артём Мурзин',
-    img: './img/team/murzin_artyom.jpg',
-    info: 'Сухая лаборатория',
-  },
-
-  {
-    name: 'Иван Кутелёв',
-    img: './img/team/kutelev_ivan.jpg',
-    info: 'Мокрая лаборатория',
-  },
+  
 ];
 
 const sponsors = [
