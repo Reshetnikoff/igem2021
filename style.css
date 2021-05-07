@@ -236,6 +236,9 @@ section {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .project__actual-wrapper .project__item:nth-child(odd) {

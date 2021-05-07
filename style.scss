@@ -224,6 +224,7 @@ section {
       display: flex;
       flex-flow: row nowrap;
       margin-bottom: 20px;
+      align-items: center;
 
       &:nth-child(odd) {
         margin-right: 2%;

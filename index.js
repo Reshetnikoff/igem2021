@@ -17,7 +17,6 @@ const team = [
     info: 'Куратор научной части<br>Организатор',
   },
 
-
   {
     name: 'Вера Сысоева',
     img: './img/team/sysoeva_vera.jpg',
@@ -43,9 +42,9 @@ const team = [
   },
   
   {
-     name: 'Артём Мурзин',
-     img: './img/team/murzin_artyom.jpg',
-     info: 'Сухая лаборатория',
+    name: 'Артём Мурзин',
+    img: './img/team/murzin_artyom.jpg',
+    info: 'Сухая лаборатория',
   },
   
   {
