@@ -192,14 +192,12 @@ section {
 .title1 {
   font-weight: 400;
   font-size: 2.2rem;
-  // @include Raleway;
   margin-top: 0;
 }
 
 .title2 {
   font-weight: 400;
   font-size: 1.8rem;
-  // @include Raleway;
   margin-top: 0;
   margin-bottom: 7px;
 }
@@ -207,7 +205,101 @@ section {
 .title3 {
   font-weight: 500;
   font-size: 1.5rem;
-  // @include Raleway;
+}
+
+.scheme {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.scheme__lines-bg {
+  background: linear-gradient(90deg, transparent 50%, white 50%), 
+    linear-gradient(#F9D332 50%, #fff 50%); 
+  height: 155px; 
+  background-size: cover, 10px 10px;
+  margin-top: 30px;
+  position: relative;
+
+  .container {
+    background: linear-gradient(90deg, transparent 100px, white 100px); 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &.indented {
+      padding-left: 190px;
+      background: linear-gradient(90deg, transparent 260px, white 260px); 
+    }
+
+    @include tablet-portrait{
+      &.indented {
+        padding-left: 20px;
+      }
+      background: linear-gradient(90deg, transparent 50%, white 50%); 
+    }
+  }
+
+  .scheme__image {
+    height: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-right: 30px;
+
+    @include tablet-portrait {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+.scheme__description {
+  @include tablet-portrait{
+    display: none;
+  }
+}
+
+.scheme__description-mobile {
+  display: none;
+
+  @include tablet-portrait{
+    display: block;
+  }
+}
+
+.scheme__arrows {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  @include tablet-portrait {
+    display: none;
+  }
+}
+
+.scheme-arrow {
+  width: 63px;
+  margin-left: 110px;
+
+  &:nth-child(1) {
+    margin-top:155px;
+  }
+
+  &:nth-child(2) {
+    margin-top:73px;
+    margin-left: 105px;
+  }
+
+  &:nth-child(3) {
+    margin-top:151px;
+  }
+
+  &.scheme-arrow-rotate {
+    transform: rotate(90deg);
+  }
+
+  img {
+    width: 100%;
+  }
+
 }
 
 .team {

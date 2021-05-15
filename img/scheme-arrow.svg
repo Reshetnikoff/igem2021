@@ -1,0 +1,22 @@
+<svg id="b8fcabd3-fff3-4a6c-85ab-4e99e099b692" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.1 72.28">
+  <defs>
+    <style>
+      .\35 a44eb83-0277-4b59-ab62-0ef09de26c04 {
+        fill: none;
+        stroke: #828382;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .\33 b1e8d5d-ef7d-49ac-a7d2-f41a47dbc8c7 {
+        fill: #828382;
+      }
+    </style>
+  </defs>
+  <title>scheme-arrow-right</title>
+  <g>
+    <path class="5a44eb83-0277-4b59-ab62-0ef09de26c04" d="M3,3c7.36,30.22,21.86,49.82,49.58,60.48"/>
+    <path class="3b1e8d5d-ef7d-49ac-a7d2-f41a47dbc8c7" d="M50,72.23l14.19-3.11a2.37,2.37,0,0,0,1.25-3.91L55.69,54.47a2.37,2.37,0,0,0-4,.88l-4.4,13.84A2.37,2.37,0,0,0,50,72.23Z"/>
+  </g>
+</svg>
