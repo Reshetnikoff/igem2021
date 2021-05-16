@@ -191,8 +191,13 @@ section {
 
 .title1 {
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: 4rem;
+  text-transform: uppercase;
   margin-top: 0;
+  line-height: 1;
+  @include phone {
+    font-size: 2.5rem;
+  }
 }
 
 .title2 {
