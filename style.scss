@@ -170,8 +170,69 @@ section {
   text-transform: uppercase;
   margin-top: 0;
   line-height: 1;
+  position: relative;
+
   @include phone {
     font-size: 2.5rem;
+  }
+
+  #actual & {
+    .rotate {
+      max-width: 300px;
+      transform-origin: 0 0;
+      transform: rotate(10deg);
+    }
+  
+    .mirror {
+      max-width: 300px;
+      transform: scale(1, -1) rotate(11deg) translate(-21px, -90px);
+      color: $yellow;
+      transform-origin: 100% 0;
+    }
+
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  #what-detect & {
+    .rotate {
+      position: absolute;
+      display: inline-block;
+      line-height: 0;
+      font-size: 16rem;
+      transform-origin: 100% 100%;
+      color: $yellow;
+      transform: rotate(90deg) translate(7rem);
+
+      @include phone {
+        transform: rotate(90deg) translate(0rem, 13rem);
+      }
+    }
+  }
+
+  #team & {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2rem;
+
+    .rotate {
+      line-height: 0;
+      position: absolute;
+      transform: rotate(-90deg) translate(-10px, -221px);
+      transform-origin: 100% 100%;
+    }
+  }
+  
+  #support & {
+    z-index: 2;
+    .yellow {
+      color: $yellow;
+      z-index: 1;
+      margin-right: -1.5rem;
+    }
+    
   }
 }
 
@@ -189,7 +250,7 @@ section {
 
 .scheme {
   margin-top: 40px;
-  margin-bottom: 70px;
+  // margin-bottom: 70px;
 }
 
 .scheme__lines-bg {
@@ -448,13 +509,6 @@ section {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-
-.sponsors::before {
-  content: '';
-  @include yellow-line;
-  margin-top: -50px;
-  margin-bottom: 50px;
 }
 
 .social {
