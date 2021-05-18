@@ -188,6 +188,10 @@ section {
       transform: scale(1, -1) rotate(11deg) translate(-21px, -90px);
       color: $yellow;
       transform-origin: 100% 0;
+
+      @include phone {
+        transform: scale(1, -1) rotate(11deg) translate(-11px, -35px);
+      }
     }
 
     margin-bottom: 80px;

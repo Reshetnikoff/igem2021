@@ -207,6 +207,13 @@ section {
           transform-origin: 100% 0;
 }
 
+@media (max-width: 480px) {
+  #actual .title1 .mirror {
+    -webkit-transform: scale(1, -1) rotate(11deg) translate(-11px, -35px);
+            transform: scale(1, -1) rotate(11deg) translate(-11px, -35px);
+  }
+}
+
 #what-detect .title1 .rotate {
   position: absolute;
   display: inline-block;
