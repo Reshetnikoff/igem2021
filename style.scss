@@ -567,5 +567,11 @@ section {
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: $yellow-gradient-bg;
+  background-color: lighten($yellow, 20%);
+}
+
+.yellow-bg {
+  background-image: url(./img/yellow-bg.png);
+  background-repeat: no-repeat;
+  background-position: right -415px bottom 16%;
 }

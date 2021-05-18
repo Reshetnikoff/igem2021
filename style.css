@@ -676,7 +676,12 @@ section {
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#989282), to(#F9D237));
-  background-image: linear-gradient(180deg, #989282 0%, #F9D237 100%);
+  background-color: #fce895;
+}
+
+.yellow-bg {
+  background-image: url(./img/yellow-bg.png);
+  background-repeat: no-repeat;
+  background-position: right -415px bottom 16%;
 }
 /*# sourceMappingURL=style.css.map */
