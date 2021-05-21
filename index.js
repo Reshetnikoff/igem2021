@@ -161,11 +161,11 @@ const team = [
     info: 'Сухая лаборатория',
   },
   
-  {
-    name: 'Никита Моторин',
-    img: './img/team/motorin_nikita.jpg',
-    info: 'Сухая лаборатория',
-  },
+  // {
+  //   name: 'Никита Моторин',
+  //   img: './img/team/motorin_nikita.jpg',
+  //   info: 'Сухая лаборатория',
+  // },
   
   {
     name: 'Маргарита Егиян',
