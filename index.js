@@ -284,9 +284,15 @@ function setSlider (team) {
 
 }
 
+function setScrollToTop() {
+  const scrollBtn = document.querySelector('#scroll-to-top');
+  scrollBtn.addEventListener('click', () => window.scrollTo(0, 0));
+}
+
 function init() {
   setSlider(team);
   renderSponsors(sponsors);
+  setScrollToTop();
 }
 
 document.addEventListener('DOMContentLoaded', init);

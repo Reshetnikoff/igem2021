@@ -30,6 +30,9 @@ $dark-grey: #2d2d2d;
   border-left: 2.5px solid white;
   border-right: 2.5px solid white;
 }
+@mixin shadow {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 $yellow-gradient-bg: linear-gradient(180deg, #989282 0%, #F9D237 100%);
 
@@ -301,7 +304,7 @@ section {
 
   .scheme__image {
     height: 100%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include shadow;
     margin-right: 30px;
 
     @include tablet-portrait {
@@ -401,7 +404,7 @@ section {
   flex-shrink: 0;
   margin-right: 4%;
   background-color: $yellow;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @include shadow;
   border-radius: 50%;
   background-size: 66%;
   background-repeat: no-repeat;
@@ -415,6 +418,9 @@ section {
   margin-left: auto;
   margin-right: auto;
   font-weight: 600;
+  background-color: $yellow;
+  padding: 15px;
+  border-radius: 60px;
 
   @include tablet-portrait {
     width: 100%;
@@ -434,6 +440,7 @@ section {
   cursor: pointer;
   position: absolute;
   max-width: 50px;
+  @include shadow;
 
   &#slider-left {
     left: -60px;
@@ -529,6 +536,10 @@ section {
   }
 }
 
+#sponsors {
+  padding-bottom: 0;
+}
+
 .social {
   .container {
     display: flex;
@@ -578,10 +589,41 @@ section {
   }
 }
 
+.button {
+  background-color: $yellow;
+  @include shadow;
+  border-radius: 50%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &#scroll-to-top {
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 40px;
+    background-size: 50%;
+    background-image: url(./img/top.svg);
+    transition: 0.5s;
+
+    &:hover {
+      transform: translate(0px, -10px);
+      transition: 0.5s;
+    }
+  }
+}
+
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: lighten($yellow, 20%);
+  background-color: lighten($yellow, 18%);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.25);
+
+  a {
+    color: inherit;
+  }
 }
 
 .yellow-bg {
