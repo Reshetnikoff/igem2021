@@ -187,72 +187,51 @@ section {
   margin-top: 0;
   line-height: 1;
   position: relative;
-
   @include phone {
     font-size: 2.5rem;
   }
 
-  #actual & {
-    .rotate {
-      max-width: 300px;
-      transform-origin: 0 0;
-      transform: rotate(10deg);
-    }
-  
-    .mirror {
-      max-width: 300px;
-      transform: scale(1, -1) rotate(11deg) translate(-21px, -90px);
-      color: $yellow;
-      transform-origin: 100% 0;
-
-      @include phone {
-        transform: scale(1, -1) rotate(11deg) translate(-11px, -35px);
-      }
-    }
-
-    margin-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
   #what-detect & {
     .rotate {
-      position: absolute;
-      display: inline-block;
-      line-height: 0;
       font-size: 18rem;
       transform-origin: 100% 100%;
-      color: $yellow;
       transform: rotate(90deg) translate(-1rem, 22rem);
 
       @include phone {
         font-size: 16rem;
-        transform: rotate(90deg) translate(0rem, 13rem);
+        transform: rotate(90deg) translate(-35px, -92px);
       }
     }
   }
 
-  #team & {
-    display: flex;
-    align-items: flex-start;
-    padding-left: 2rem;
-
+  #about & {
     .rotate {
-      line-height: 0;
-      position: absolute;
-      transform: rotate(-90deg) translate(-10px, -221px);
-      transform-origin: 100% 100%;
+      font-size: 18rem;
+      transform: translate(89px, -80px);
+      z-index: 0;
+
+      @include phone {
+        font-size: 12rem;
+        transform: translate(57px, -48px);
+      }
     }
   }
-  
-  #support & {
+
+  .yellow {
+    color: $yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .rotate {
+    position: absolute;
+    display: inline-block;
+    line-height: 0;
+    color: $yellow;
+  }
+
+  .text-above {
+    position: relative;
     z-index: 2;
-    .yellow {
-      color: $yellow;
-      z-index: 1;
-      margin-right: -1.5rem;
-    }
   }
 
 }
@@ -590,7 +569,8 @@ section {
 }
 
 .button {
-  background-color: $yellow;
+  background-color: white;
+  border: $yellow 6px solid;
   @include shadow;
   border-radius: 50%;
   cursor: pointer;
