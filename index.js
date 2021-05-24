@@ -208,7 +208,7 @@ const sponsors = [
   {
     name: 'МГУ',
     img: './img/sponsors/msu.png',
-    link: 'http://www.msu.ru',
+    link: 'https://www.msu.ru',
   },
 ];
 
