@@ -210,6 +210,11 @@ const sponsors = [
     img: './img/sponsors/msu.png',
     link: 'https://www.msu.ru',
   },
+  {
+    name: 'Helicon',
+    img: './img/sponsors/helicon.png',
+    link: 'https://www.helicon.ru/',
+  }
 ];
 
 function renderTeam (list) {
