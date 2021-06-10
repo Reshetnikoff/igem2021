@@ -217,6 +217,14 @@ const sponsors = [
   }
 ];
 
+const partners = [
+  {
+    name: 'Летняя школа',
+    img: './img/partners/lsh.png',
+    link: 'https://letnyayashkola.org/',
+  }
+]
+
 function renderTeam (list) {
   const itemsWrapper = document.querySelector('.team__items-wrapper');
   let html = '';
@@ -230,12 +238,12 @@ function renderTeam (list) {
   itemsWrapper.innerHTML = html;
 }
 
-function renderSponsors (list) {
-  const itemsWrapper = document.querySelector('.sponsors__items-wrapper');
+function renderHtml(list, type) {
+  const itemsWrapper = document.querySelector(`.${type}__items-wrapper`);
   let html = '';
-  list.forEach(sponsor => {
-    html += `<div class="sponsors__item" title="${sponsor.name}">
-        <a href="${sponsor.link}"> <div class="sponsors__logo" style="background-image: url(${sponsor.img});"></div></a>
+  list.forEach(item => {
+    html += `<div class="${type}__item" title="${item.name}">
+        <a href="${item.link}"> <div class="${type}__logo" style="background-image: url(${item.img});"></div></a>
       </div>`;
   });
   itemsWrapper.innerHTML = html;
@@ -296,7 +304,8 @@ function setScrollToTop() {
 
 function init() {
   setSlider(team);
-  renderSponsors(sponsors);
+  renderHtml(sponsors, 'sponsors');
+  renderHtml(partners, 'partners');
   setScrollToTop();
 }
 

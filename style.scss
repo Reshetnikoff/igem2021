@@ -496,17 +496,17 @@ section {
   }
 }
 
-.sponsors__items-wrapper {
+.sponsors__items-wrapper, .partners__items-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 
-  .sponsors__item {
+  .sponsors__item, .partners__item {
     margin: 0 3% 6%;
   }
 
-  .sponsors__logo {
+  .sponsors__logo, .partners__logo {
     width: 200px;
     height: 200px;
     background-size: contain;
@@ -515,7 +515,8 @@ section {
   }
 }
 
-#sponsors {
+#sponsors, #partners {
+  margin-bottom: -3%;
   padding-bottom: 0;
 }
 
