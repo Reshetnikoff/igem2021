@@ -619,14 +619,28 @@ section {
   // background-size: contain;
 }
 
-.iframe-wrapper {
+.timer-wrapper {
   margin-left: auto;
   margin-right: auto;
   max-width: 500px;
 }
 
-#oak-embed {
+.timer {
   width: 100%;
-  border: 0;
+  display: flex;
+  justify-content: space-evenly;
+
+  .timer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .timer__num {
+    font-size: 3rem;
+    font-weight: 600;
+  }
 }
 
