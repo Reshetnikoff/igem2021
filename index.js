@@ -214,7 +214,12 @@ const sponsors = [
     name: 'Helicon',
     img: './img/sponsors/helicon.png',
     link: 'https://www.helicon.ru/',
-  }
+  }, 
+  {
+    name: 'BIOCAD',
+    img: './img/sponsors/Biocad_Logo_green.svg',
+    link: 'https://biocad.ru/',
+  }, 
 ];
 
 const partners = [
@@ -222,7 +227,17 @@ const partners = [
     name: 'Летняя школа',
     img: './img/partners/lsh.png',
     link: 'https://letnyayashkola.org/',
-  }
+  }, 
+  {
+    name: 'БиоШкола «Пилигрим»',
+    img: './img/partners/piligrim.png',
+    link: 'https://ipbz.ru/about-piligrim/',
+  }, 
+  {
+    name: 'Цифровой бал',
+    img: './img/partners/digital-ball.svg',
+    link: 'https://digital-ball.ru',
+  }, 
 ]
 
 function renderTeam (list) {
